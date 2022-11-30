@@ -95,6 +95,15 @@ services:
     environment:
       - gravitee_management_mongodb_uri=mongodb://mongodb:27017/gravitee?serverSelectionTimeoutMS=5000&connectTimeoutMS=5000&socketTimeoutMS=5000
       - gravitee_analytics_elasticsearch_endpoints_0=http://elasticsearch:9200
+      
+      # -- this is the env varibles that will allow STMP emial services 
+      # -- allowing other users to access my APIs via IP:port/route
+      # - gravitee_email_enabled=true
+      # - gravitee_email_host=smtp.my.domain
+      # - gravitee_email_port=25
+      # - gravitee_email_from=api@my.domain
+      # - gravitee_email_username=user@my.domain
+      # - gravitee_email_password=password
     networks:
       - storage
       - frontend
