@@ -25,6 +25,7 @@ A repo to practice the use and implementation of the Gravitee API management pla
  12. skip the next step, then when prompted select "CREATE AND START THE API" 
 13. To check if the backend, the path, and the Gravitee API manager as a whole has been set up correctly so far in your search engine of choice search 'localhost:8082/{enter your /pathname here}'
  - While using the httpbin.org backend we should see a JSON file returned. Its format should be simular to as follows.
+ 
  {
   "args": {}, 
   "data": "", 
