@@ -24,7 +24,36 @@ A repo to practice the use and implementation of the Gravitee API management pla
  11. Create and name a plan that has the keyless security type 
  12. skip the next step, then when prompted select "CREATE AND START THE API" 
 13. To check if the backend, the path, and the Gravitee API manager as a whole has been set up correctly so far in your search engine of choice search 'localhost:8082/{enter your /pathname here}'
- - While using the httpbin.org backend we should see a JSON file returned with the headers sent by the request in the headers of the returned text.
+ - While using the httpbin.org backend we should see a JSON file returned. Its format should be simular to as follows.
+ {
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", 
+    "Accept-Encoding": "deflate, gzip", 
+    "Accept-Language": "en-US,en;q=0.9", 
+    "Cookie": "WMF-Last-Access=28-Nov-2022; Auth-Graviteeio-APIM=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2YWIyOGYzMi1mODU5LTRhNjAtYjI4Zi0zMmY4NTkxYTYwMjciLCJwZXJtaXNzaW9ucyI6W3siYXV0aG9yaXR5IjoiRU5WSVJPTk1FTlQ6QURNSU4ifSx7ImF1dGhvcml0eSI6Ik9SR0FOSVpBVElPTjpBRE1JTiJ9LHsiYXV0aG9yaXR5IjoiT1JHQU5JWkFUSU9OOkFETUlOIn0seyJhdXRob3JpdHkiOiJPUkdBTklaQVRJT046VVNFUiJ9LHsiYXV0aG9yaXR5IjoiRU5WSVJPTk1FTlQ6QURNSU4ifSx7ImF1dGhvcml0eSI6IkVOVklST05NRU5UOlVTRVIifV0sImlzcyI6ImdyYXZpdGVlLW1hbmFnZW1lbnQtYXV0aCIsImV4cCI6MTY3MDM1NTExMCwiaWF0IjoxNjY5NzUwMzEwLCJqdGkiOiJlZjM1OTBmZi02NWZkLTRmMTQtYjQ4Yi0yNjRhZGYzZjVmYTEifQ.Z2gbsqwTN-k36-yyPlup24fquK4Xneqxqq6VyhCwtMY; XSRF-TOKEN=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJncmF2aXRlZS1tYW5hZ2VtZW50LWF1dGgiLCJpYXQiOjE2Njk3NzE0NzMsInRva2VuIjoiY2ZjMjdjMjktMzM4MC00YTdiLThkMzItNmQ1NWFmNjBiNDgxIn0.ZFcd25P6S76uQD4rAJBJQMyA50svo4wdW1NL645-65M", 
+    "Host": "httpbin.org", 
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"", 
+    "Sec-Ch-Ua-Mobile": "?0", 
+    "Sec-Ch-Ua-Platform": "\"Windows\"", 
+    "Sec-Fetch-Dest": "document", 
+    "Sec-Fetch-Mode": "navigate", 
+    "Sec-Fetch-Site": "none", 
+    "Sec-Fetch-User": "?1", 
+    "Upgrade-Insecure-Requests": "1", 
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", 
+    "X-Amzn-Trace-Id": "Root=1-6386b0de-19f16c1209c9182055f7a288", 
+    "X-Gravitee-Request-Id": "9707a61a-d160-465d-87a6-1ad160e65dff", 
+    "X-Gravitee-Transaction-Id": "9707a61a-d160-465d-87a6-1ad160e65dff"
+  }, 
+  "json": null, 
+  "method": "GET", 
+  "origin": "203.86.192.144", 
+  "url": "https://httpbin.org/anything"
+}
  
 
 
