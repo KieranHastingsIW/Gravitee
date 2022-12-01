@@ -100,10 +100,26 @@ services:
       # -- allowing other users to access my APIs via IP:port/route
       # - gravitee_email_enabled=true
       # - gravitee_email_host=smtp.my.domain
-      # - gravitee_email_port=25
-      # - gravitee_email_from=api@my.domain
+      # - gravitee_email_subject="[Gravitee.io] %s"
+      # - gravitee_email_port=1025
+      # - gravitee_email_from=noreply@my.domain
       # - gravitee_email_username=user@my.domain
       # - gravitee_email_password=password
+      # - gravitee_email_properties_auth=true
+      # - gravitee_email_properties_starttls_enable=true
+      # - gravitee_email_properties_ssl_trust=smtp.gmail.com
+      #  properties:
+      #    auth: true
+      #    starttls.enable: true
+      #    ssl.trust: smtp.gmail.com
+
+      # Mail templates
+      #templates:
+      #  path: ${gravitee.home}/templates
+
+
+
+
     networks:
       - storage
       - frontend

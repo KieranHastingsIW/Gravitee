@@ -7,7 +7,7 @@ A repo to practice the use and implementation of the Gravitee API management pla
  1. In your CLI cd to the directory you wish to run the compose file from.
  2. Clone this repo to your directory of choice.
  3. cd into the newly created file.
- 4. Run the compose command 'docker compose up'
+ 4. Run the compose command 'docker compose up'  
   - WARNING: If this is the first time you are using any of the images in this compose file this set up may take between 1 and 5 minutes. 
  5. In docker desktop confirm that all 6 containers are running, they should be named as follows (unless redefined by yourself).
     - gio_apim_mongodb
