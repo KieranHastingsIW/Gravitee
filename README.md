@@ -2,14 +2,16 @@
 A repo to practice the use and implementation of the Gravitee API management platform and includes installation and testing for deployment of Gravitee within a Docker container.  
 
 # Instillation process
-    NOTE: These instruction assume you already have docker and docker for desktop installed on the system you are wanting to be your host, and that you have docker desktop running. 
+    NOTE: These instructions assume you already have docker installed on the system you are wanting to be your host.
+          Also, if you are running a non Linux operating system it assumes you have Docker Desktop installed and running. 
     
  1. In your CLI cd to the directory you wish to run the compose file from.
  2. Clone this repo to your directory of choice.
  3. cd into the newly created file.
- 4. Run the compose command 'docker compose up'  
+ 4. Run the compose command 'docker compose up' or 'docker compose up -d' the -d will run the command in detached mode meaning you will not be able to see the 
   - WARNING: If this is the first time you are using any of the images in this compose file this set up may take between 1 and 5 minutes. 
- 5. In docker desktop confirm that all 6 containers are running, they should be named as follows (unless redefined by yourself).
+ 5. To confirm all containers have been created run the 'docker ps' command, the names of the 6 containers should be as follows.  
+    NOTE: if you did not run in detached mode you will need to run the 'docker ps' command in a separate CLI window.
     - gio_apim_mongodb
     - gio_apim_elasticsearch
     - gio_apim_gateway
@@ -25,7 +27,7 @@ A repo to practice the use and implementation of the Gravitee API management pla
  11. Create and name a plan that has the keyless security type 
  12. skip the next step, then when prompted select "CREATE AND START THE API" 
 13. To check if the backend, the path, and the Gravitee API manager as a whole has been set up correctly so far in your search engine of choice search 'localhost:8082/{enter your /pathname here}'
- - While using the httpbin.org backend we should see a JSON file returned. Its content should be simular to as follows.
+ - While using the httpbin.org backend we should see a JSON file returned. Its content should be similar to as follows.
 
  {
   "args": {}, 
