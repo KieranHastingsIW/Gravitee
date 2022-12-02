@@ -1,8 +1,8 @@
 # Gravitee
 A repo to practice the use and implementation of the Gravitee API management platform and includes installation and testing for deployment of Gravitee within a Docker container.  
 
-# Instillation process
-    NOTE: These instructions assume you already have docker installed on the system you are wanting to be your host.
+# Installation process
+    NOTE: These instructions assume you already have docker installed on the system you are wanting to use as your host. 
           Also, if you are running a non Linux operating system it assumes you have Docker Desktop installed and running. 
     
  1. In your CLI cd to the directory you wish to run the compose file from.
